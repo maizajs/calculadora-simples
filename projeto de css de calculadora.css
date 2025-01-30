@@ -1,0 +1,125 @@
+/* Reset básico para garantir consistência no estilo */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Configuração geral do corpo da página */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #3b0dd3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+/* Estilo da calculadora */
+.calculator {
+  background-color: #0af450;
+  border-radius: 15px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  width: 350px;
+  padding: 20px;
+}
+
+/* Display da calculadora */
+.display {
+  width: 100%;
+  height: 60px;
+  background-color: #bef204;
+  color: hsl(60, 25%, 97%);
+  text-align: right;
+  line-height: 60px;
+  font-size: 2.5em;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  padding: 0 15px;
+  overflow-x: hidden;
+}
+
+/* Contêiner de botões */
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+/* Estilo para todos os botões */
+button {
+  padding: 20px;
+  font-size: 1.5em;
+  border: none;
+  border-radius: 10px;
+  background-color: #f90505;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  outline: none;
+}
+
+button:hover {
+  background-color: #7c0af6;
+}
+
+button:active {
+  background-color: #d0d0d0;
+}
+
+/* Estilo dos botões de operação */
+.operator {
+  background-color: #3b12f3;
+  color: #fff;
+}
+
+.operator:hover {
+  background-color: #3c22e6;
+}
+
+.operator:active {
+  background-color: #cdf505;
+}
+
+/* Estilo do botão de limpar (C) */
+.clear {
+  background-color: #f3048b;
+  color: #fff;
+}
+
+.clear:hover {
+  background-color: #c0392b;
+}
+
+.clear:active {
+  background-color: #e74c3c;
+}
+
+/* Estilo do botão de igual (=) */
+.equal {
+  background-color: #f05806;
+  color: #fff;
+  grid-column: span 2;
+}
+
+.equal:hover {
+  background-color: #a604f0;
+}
+
+.equal:active {
+  background-color: #2ecc71;
+}
+
+/* Estilo do botão de ponto decimal e porcentagem */
+.decimal, .percent {
+  background-color: #f69a05;
+  color: #333;
+}
+
+.decimal:hover, .percent:hover {
+  background-color: #c5f004;
+}
+
+.decimal:active, .percent:active {
+  background-color: #7f8c8d;
+}
